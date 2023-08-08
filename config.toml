@@ -1,5 +1,5 @@
 # Configure URL. if using gh-pages https://github.com/<username>/hugo-universal-theme URL: https://<username>.github.io/hugo-universal-theme/
-baseurl = "https://www.example.com/"
+baseurl = "https://www.mimidoula.com"
 title = "Mimi Doula"
 theme = "hugo-universal-theme"
 # themesDir = "../.."
@@ -62,15 +62,15 @@ pluralizelisttitles = false
 [[menu.topbar]]
     weight = 5
     name = "Email"
-    url = "mailto:hello@universal.com"
+    url = "mailto:email@mimidoula.com"
     pre = "<i class='fas fa-2x fa-envelope'></i>"
 
 [params]
     viewMorePostLink = "/posts/"
-    author = "DevCows"
-    defaultKeywords = ["devcows", "hugo", "go"]
+    author = "mimidoula"
+    defaultKeywords = ["mimidoula", "birth", "doula"]
     mainSections = ["posts"]
-    defaultDescription = "Site template made by Devcows using Hugo"
+    defaultDescription = "mimidoula 25+ years of birth experience"
 
     # Social media
     facebook_site = "" # the Facebook handle of your site ('https://www.facebook.com/HANDLE')
@@ -121,7 +121,7 @@ pluralizelisttitles = false
     enableRecaptchaInContactForm = false
     googleRecaptchaKey = "site_key_for_google_recaptcha"
 
-    about_us = "<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>"
+    about_us = "<p>We have been passionate about birth since 1995. Let us help you make the ideal birth for you.</p>"
     copyright = "Copyright (c) 2023, Mimi Doula LLC; all rights reserved."
 
     # Format dates with Go's time formatting
@@ -143,9 +143,9 @@ pluralizelisttitles = false
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """<p class="hidden-sm hidden-xs">Contact us on +420 777 555 333 or hello@universal.com.</p>
+    text = """
       <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-      <a href="mailto:hello@universal.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
+      <a href="mailto:email@mimidoula.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
       </p>
       """
 
