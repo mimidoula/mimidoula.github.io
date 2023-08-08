@@ -1,0 +1,16 @@
+weight: 4
+title: "Mimi Doula"
+description: "<p>Contact us</p>"
+image: "img/family-with-baby-drawing.svg"
+href: "/contact/"
+
+# weight: 3
+# title: "Design"
+# description: >
+#   <ul class="list-style-none">
+#     <li>Clean and elegant design</li>
+#     <li>Full width and boxed mode</li>
+#     <li>Easily readable Roboto font and awesome icons</li>
+#     <li>7 preprepared colour variations</li>
+#   </ul>
+# image: "img/carousel/template-easy-customize.png"

@@ -1,0 +1,79 @@
+/* your styles go here */
+/* Example site test */
+
+:root {
+    /* --primary-accent: #c27baa; */
+    --primary-accent: #eebec0;
+    /* --navbar-border-top: #934478; */
+    --navbar-border-top: #df9191;
+    /* --button-border: #af518f; */
+    --button-border: #df9191;
+    /* --link-focus: #a44c87; */
+    --link-focus: #b97979;
+    /* --form-shadow: rgba(194, 123, 170, 0.6); */
+    --form-shadow: rgba(192, 192, 192, 0.6);
+    --pagination-bg: #f2e4ed;
+    /* --link-hover-bg: #b25894; */
+    --link-hover-bg: #916161;
+    --navbar-focus: #e2c1d7;
+  }
+
+  .home-carousel {
+    position: relative;
+    background: url('../img/mimi-doula-no-words-no-background.svg') center center repeat;
+    background-size: cover;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+  }
+
+  .navbar-brand {
+    float: left;
+    /* padding: 10px 15px; */
+    /* padding-bottom: 10px; */
+    /* font-size: 18px;
+    line-height: 20px; */
+    /* height: 52px; */
+  }
+  .navbar-brand img {
+    max-height: 72px;
+  }
+
+.box-image-text .image {
+    min-height: 190px;
+    max-height: 190px;
+}
+
+.box-image-text .image img {
+    max-height: 190px;
+    margin: auto;
+}
+
+.box-simple {
+    min-height: 230px;
+}
+
+.prenatal-svg {
+    display: inline-block;
+    width: 5rem;
+    vertical-align: middle;
+    content: url("../img/icons/prenatal.svg")
+}
+
+.postpartum-svg {
+    display: inline-block;
+    width: 6.5rem;
+    vertical-align: middle;
+    content: url("../img/icons/postpartum.svg")
+}
+
+.doulaservices-svg {
+    display: inline-block;
+    width: 5rem;
+    vertical-align: middle;
+    content: url("../img/icons/doulasupport.svg")
+}
+
+.navbar-nav > li > a {
+    line-height: 40px; /*changed to 60 gives enough space*/
+}
