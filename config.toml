@@ -143,11 +143,6 @@ pluralizelisttitles = false
 # Enable or disable top bar with social icons
 [params.topbar]
     enable = true
-    text = """
-      <p class="hidden-md hidden-lg"><a href="tel:+420 777 555 333" data-animate-hover="pulse"><i class="fas fa-phone"></i></a>
-      <a href="mailto:email@mimidoula.com" data-animate-hover="pulse"><i class="fas fa-envelope"></i></a>
-      </p>
-      """
 
 # Enable and disable widgets for the right sidebar
 [params.widgets]
