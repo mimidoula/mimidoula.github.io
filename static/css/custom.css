@@ -77,3 +77,9 @@
 .navbar-nav > li > a {
     line-height: 40px; /*changed to 60 gives enough space*/
 }
+
+.bar.background-image-fixed-2 {
+  background: url('../img/water_birth_with_doula.jpg') center top no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
