@@ -95,3 +95,5 @@ jobs:
         local-dir: ./public/
         server-dir: /mimidoula.com/public_www/
         protocol: ftp
+        log-level: minimal
+        timeout: 60000
