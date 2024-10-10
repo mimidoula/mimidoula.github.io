@@ -81,6 +81,7 @@ jobs:
   web-deploy:
     name: 🎉 Deploy site to www
     runs-on: ubuntu-latest
+    needs: build
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
