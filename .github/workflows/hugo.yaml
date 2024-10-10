@@ -97,3 +97,7 @@ jobs:
         protocol: ftp
         log-level: verbose
         timeout: 60000
+        exclude: |
+          **/img/**
+          **/.git*/**
+          **/node_modules/**
