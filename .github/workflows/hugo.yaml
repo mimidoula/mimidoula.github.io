@@ -96,8 +96,3 @@ jobs:
         server-dir: /mimidoula.com/public_www/
         protocol: ftp
         timeout: 90000
-        exclude: |
-          **/.git*/**
-          **/node_modules/**
-          **/img/**
-          **/authors/**
