@@ -88,16 +88,20 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.5
       with:
-        server: ftp.netim.hosting
+        server: 185.26.107.28 #ftp.netim.hosting
         username: ZR33031_FTP1
         password: ${{ secrets.FTP_PASSWORD }}
         dry-run: false
         local-dir: ./public/
         server-dir: /mimidoula.com/public_www/
         protocol: ftp
-        log-level: verbose
-        timeout: 60000
+        timeout: 90000
         exclude: |
-          **/img/**
           **/.git*/**
           **/node_modules/**
+          **/img/**
+          **/authors/**
+          **/tags/**
+          **/css/**
+          **/posts/**
+          **/categories/**
