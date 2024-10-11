@@ -96,3 +96,12 @@ jobs:
         server-dir: /public_www/
         protocol: ftp
         timeout: 120000
+        exclude: |
+          **/.git*/**
+          **/node_modules/**
+          **/img/**
+          **/authors/**
+          **/tags/**
+          **/css/**
+          **/posts/**
+          **/categories/**
