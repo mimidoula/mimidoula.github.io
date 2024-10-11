@@ -1,6 +1,8 @@
-on:
+name: Prod deploy build
+
+on: push
 # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  # workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -19,6 +21,7 @@ defaults:
   run:
     shell: bash
 
+jobs:
 # Prod ftp deploy
   web-deploy:
     name: Deploy public site

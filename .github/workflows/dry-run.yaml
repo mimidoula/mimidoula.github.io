@@ -1,3 +1,4 @@
+name: Dry run upload public
 on: push
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -17,6 +18,7 @@ defaults:
   run:
     shell: bash
 
+jobs:
 # Dry run
   dry-run-deploy:
     name: Deploy site - dry run
