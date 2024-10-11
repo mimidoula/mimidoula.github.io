@@ -69,8 +69,6 @@ jobs:
         with:
           path: ./public
           name: public
-      - name: Uploaded artifacts
-        run: ls -la
 
   # Deployment job
   # deploy:
@@ -85,22 +83,22 @@ jobs:
   #       uses: actions/deploy-pages@v4
 
   # Deploy prod dry run
-  web-deploy:
-    name: Deploy site
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-    - uses: actions/download-artifact@v4
-      with:
-        path: ./public
-    - name: 📂 Sync files
-      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-      with:
-        server: 185.26.107.28 # ftp.netim.hosting
-        username: ZR33031_FTP1
-        password: ${{ secrets.FTP_PASSWORD }}
-        dry-run: false
-        local-dir: ./public/
-        server-dir: /public_www/
-        protocol: ftp
-        timeout: 120000
+  # web-deploy:
+  #   name: Deploy site
+  #   runs-on: ubuntu-latest
+  #   needs: build
+  #   steps:
+  #   - uses: actions/download-artifact@v4
+  #     with:
+  #       path: ./public
+  #   - name: 📂 Sync files
+  #     uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+  #     with:
+  #       server: 185.26.107.28 # ftp.netim.hosting
+  #       username: ZR33031_FTP1
+  #       password: ${{ secrets.FTP_PASSWORD }}
+  #       dry-run: false
+  #       local-dir: ./public/
+  #       server-dir: /public_www/
+  #       protocol: ftp
+  #       timeout: 120000
