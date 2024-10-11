@@ -87,7 +87,7 @@ jobs:
     #   with:
     #     name: ./public
     - name: Display structure of downloaded files
-      run: ls -R
+      run: ls -R $GITHUB_WORKSPACE
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
