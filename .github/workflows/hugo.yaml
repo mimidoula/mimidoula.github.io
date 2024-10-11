@@ -93,6 +93,6 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         dry-run: false
         local-dir: ./public/
-        server-dir: /mimidoula.com/public_www/
+        server-dir: /public_www/
         protocol: ftp
-        timeout: 90000
+        timeout: 120000
