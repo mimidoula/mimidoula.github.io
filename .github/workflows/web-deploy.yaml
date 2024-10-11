@@ -1,8 +1,8 @@
 name: Prod deploy build
 
-on: push
+on:
 # Allows you to run this workflow manually from the Actions tab
-  # workflow_dispatch:
+  workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -71,14 +71,13 @@ jobs:
         path: ./public
     - run: ls -l
       name: Show artifacts
-    # - name: 📂 Sync files
-    #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-    #   with:
-    #     server: 185.26.107.28 # ftp.netim.hosting
-    #     username: ZR33031_FTP1
-    #     password: ${{ secrets.FTP_PASSWORD }}
-    #     dry-run: true
-    #     local-dir: ./public/
-    #     server-dir: /public_www/
-    #     protocol: ftp
-    #     timeout: 30000
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: 185.26.107.28 # ftp.netim.hosting
+        username: ZR33031_FTP1
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./public/
+        server-dir: /public_www/
+        protocol: ftp
+        timeout: 120000
