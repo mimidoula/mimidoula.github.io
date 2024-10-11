@@ -68,6 +68,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./public
+      - name: Display structure of downloaded files
+        run: ls -R
 
   # Deployment job
   # deploy:
@@ -88,8 +90,8 @@ jobs:
     needs: build
     steps:
     - uses: actions/download-artifact@v4
-      with:
-        name: public
+    - name: Display structure of downloaded files
+      run: ls -R  
     # - name: 📂 Sync files
     #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
     #   with:
