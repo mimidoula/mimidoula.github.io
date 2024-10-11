@@ -101,7 +101,3 @@ jobs:
           **/node_modules/**
           **/img/**
           **/authors/**
-          **/tags/**
-          **/css/**
-          **/posts/**
-          **/categories/**
