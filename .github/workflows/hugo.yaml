@@ -64,13 +64,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
-      - name: Upload artifact
+      - name: Upload public artifact
         uses: actions/upload-artifact@v4
         with:
           path: ./public
           name: public
-      - name: Display structure of downloaded files
-        run: ls -R
 
   # Deployment job
   # deploy:
@@ -92,16 +90,14 @@ jobs:
     steps:
     - uses: actions/download-artifact@v4
       name: public
-    - name: Display structure of downloaded files
-      run: ls -R
-    # - name: 📂 Sync files
-    #   uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-    #   with:
-    #     server: 185.26.107.28 # ftp.netim.hosting
-    #     username: ZR33031_FTP1
-    #     password: ${{ secrets.FTP_PASSWORD }}
-    #     dry-run: false
-    #     local-dir: ./public/
-    #     server-dir: /public_www/
-    #     protocol: ftp
-    #     timeout: 120000
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+      with:
+        server: 185.26.107.28 # ftp.netim.hosting
+        username: ZR33031_FTP1
+        password: ${{ secrets.FTP_PASSWORD }}
+        dry-run: false
+        local-dir: ./public/
+        server-dir: /public_www/
+        protocol: ftp
+        timeout: 120000
