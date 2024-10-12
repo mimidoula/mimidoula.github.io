@@ -55,7 +55,7 @@ jobs:
       - name: Upload public artifact
         uses: actions/upload-artifact@v4
         with:
-          path: ./public
+          path: ./public/
 
 # Dry run
   dry-run-deploy:
