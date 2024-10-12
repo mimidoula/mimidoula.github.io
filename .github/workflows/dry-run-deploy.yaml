@@ -66,6 +66,8 @@ jobs:
     - uses: actions/download-artifact@v4
       with:
         path: ./public/
+    - run: ls -l
+      name: Show artifacts
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@v4.3.4
       with:
