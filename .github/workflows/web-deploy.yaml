@@ -61,6 +61,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./public/
+          name: public
 
 # Prod ftp deploy
   web-deploy:
@@ -70,7 +71,8 @@ jobs:
     steps:
     - uses: actions/download-artifact@v4
       with:
-        path: ./public/
+        path: ./public/public
+        name: public
     - run: ls -lR
       name: Show artifacts
     - name: 📂 Sync files
@@ -79,7 +81,7 @@ jobs:
         server: 185.26.107.28 # ftp.netim.hosting
         username: ZR33031_FTP1
         password: ${{ secrets.FTP_PASSWORD }}
-        local-dir: ./public/
+        local-dir: ./public/public/
         server-dir: /public_www/
         protocol: ftp
         timeout: 120000
