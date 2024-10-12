@@ -77,7 +77,7 @@ jobs:
         username: ZR33031_FTP1
         password: ${{ secrets.FTP_PASSWORD }}
         dry-run: true
-        local-dir: ./public/
+        local-dir: ./public/public/
         server-dir: /public_www/
         protocol: ftp
         timeout: 30000
