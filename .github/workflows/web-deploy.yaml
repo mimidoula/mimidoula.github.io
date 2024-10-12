@@ -61,7 +61,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           path: ./public
-          name: public
 
 # Prod ftp deploy
   web-deploy:
@@ -71,7 +70,7 @@ jobs:
     steps:
     - uses: actions/download-artifact@v4
       with:
-        path: ./public
+        path: ./public/
     - run: ls -l
       name: Show artifacts
     - name: 📂 Sync files
